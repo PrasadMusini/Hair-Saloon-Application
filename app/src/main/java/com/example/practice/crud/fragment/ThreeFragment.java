@@ -1,4 +1,4 @@
-package com.example.practice.fragment;
+package com.example.practice.crud.fragment;
 
 import android.os.Bundle;
 

@@ -1,11 +1,9 @@
-package com.example.practice.fragment;
+package com.example.practice.crud.fragment;
 
-import android.database.Cursor;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
-import android.util.Patterns;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,9 +12,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.practice.R;
-
-import java.util.ArrayList;
-import java.util.regex.Pattern;
 
 public class OneFragment extends Fragment {
 

@@ -1,8 +1,6 @@
-package com.example.practice.fragment;
+package com.example.practice.crud.fragment;
 import android.os.Parcel;
 import android.os.Parcelable;
-
-import androidx.annotation.NonNull;
 
 public class User implements Parcelable {
     private int id;
