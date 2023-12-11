@@ -1,9 +1,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.PRACTICE" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+    <style name="Theme.PRACTICE2" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary Theme.Material3.DayNight.NoActionBar MaterialComponents.DayNight.NoActionBar-->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="colorPrimary">@color/saloon_header</item>
+        <item name="colorPrimaryVariant">@color/secondary_theme</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
@@ -20,4 +21,10 @@
         <item name="android:windowExitAnimation">@anim/exit_animation</item>
 
     </style>
+
+    <style name="round_shape">
+        <item name="cornerFamily" >rounded</item>
+        <item name="cornerSize" >50%</item>
+    </style>
+    
 </resources>

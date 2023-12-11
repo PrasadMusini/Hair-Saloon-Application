@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/veg"
+            android:title="Veg">
+
+            <menu>
+
+                <item android:id="@+id/fruits"
+                    android:title="Fruits"
+                    android:icon="@drawable/home_icon" />
+                <item android:id="@+id/vegLeafs"
+                    android:title="Veg Leafs"
+                    android:icon="@drawable/home_icon"/>
+                <item android:id="@+id/vegetables"
+                    android:title="Vegetables"
+                    android:icon="@drawable/home_icon"/>
+
+            </menu>
+
+        </item>
+
+        <item android:id="@+id/non_veg"
+            android:title="Non Veg">
+
+            <menu>
+
+                <item android:id="@+id/chicken"
+                    android:title="Chicken"
+                    android:icon="@drawable/home_icon"/>
+                <item android:id="@+id/mutton"
+                    android:title="Mutton"
+                    android:icon="@drawable/home_icon"/>
+                <item android:id="@+id/beef"
+                    android:title="Beef"
+                    android:icon="@drawable/home_icon"/>
+
+            </menu>
+
+        </item>
+
+        <item android:id="@+id/sea"
+            android:title="Sea Food">
+
+            <menu>
+
+                <item android:id="@+id/fish"
+                    android:title="Fish"
+                    android:icon="@drawable/home_icon"/>
+                <item android:id="@+id/crabs"
+                    android:title="Crabs"
+                    android:icon="@drawable/home_icon"/>
+                <item android:id="@+id/prawns"
+                    android:title="Prawns"
+                    android:icon="@drawable/home_icon"/>
+
+            </menu>
+
+        </item>
+
+    </group>
+
+</menu>

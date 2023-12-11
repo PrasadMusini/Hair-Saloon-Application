@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="shapeAppearanceOverlayImageView_style">
+
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">8dp</item>
+        <item name="cornerSizeTopRight">8dp</item>
+        <item name="cornerSizeBottomRight">8dp</item>
+        <item name="cornerSizeBottomLeft">8dp</item>
+
+    </style>
+
+    <style name="op_branch_shapeable_image_style">
+
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">22dp</item>
+        <item name="cornerSizeBottomLeft">22dp</item>
+
+    </style>
+
+    <style name="slot_branchImg_shape">
+
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">22dp</item>
+        <item name="cornerSizeBottomLeft">22dp</item>
+        <item name="cornerSizeTopLeft">22dp</item>
+        <item name="cornerSizeBottomRight">22dp</item>
+
+    </style>
+
+    <style name="MyTabLayoutStyle" parent="Widget.MaterialComponents.TabLayout">
+        <item name="android:background">@color/transparent</item>
+        <item name="tabIndicatorColor">@color/saloon_primary</item>
+        <!-- Add other styling attributes as needed -->
+    </style>
+
+    <!-- res/values/styles.xml -->
+    <style name="OpTabLayoutStyle" parent="Widget.MaterialComponents.TabLayout">
+        <item name="android:background">@color/transparent</item>
+        <item name="tabIndicatorColor">@color/someColor</item>
+        <item name="tabBackground">@drawable/tab_background</item>
+        <item name="tabTextColor">@color/saloon_header</item>
+        <item name="tabSelectedTextColor">@color/white</item>
+        <item name="tabTextAppearance">@style/OpTabTestAppearance</item>
+    </style>
+
+
+    <style name="CustomProgressBar" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:indeterminateTint">@color/saloon_header</item>
+    </style>
+
+    <style name="OpTabTestAppearance">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+
+    <style name="slot_btn_accepted_status_style" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/white</item>
+            <item name="cornerSize">50%</item>
+        <item name="strokeWidth">@dimen/selected_button_stroke_width</item>
+        <item name="strokeColor">@color/green</item>
+    </style>
+</resources>

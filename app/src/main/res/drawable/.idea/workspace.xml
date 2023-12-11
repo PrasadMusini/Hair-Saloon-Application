@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="29f68a35-cfe6-4f63-b6fd-ad49e07e233d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../google-services.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/auth/GoogleAuth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/auth/HomeActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/crud/fragment/FireBaseCrud.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/datePicker/FromToActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/location/ForLogs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/location/GPS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/location/GPSActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/location/GPSModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/location/GPSResults.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/location/GetContinuousLocation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/location/GetCurrentLocation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/location/LocationActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/navigation/DestinationActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/navigation/Explicit_Intent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/navigation/Implicit_Intent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/navigation/SideNavActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/practice/CameraActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/practice/CaptureAndStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/practice/DatePickerActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/practice/GalleryPickerActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/practice/ImagePickerDepActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/practice/SplashScreenActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/practice/TabActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/practice/VideoActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/practice/WebViewActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/retrofit/RetrofitActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/retrofit/models/NetworkRequests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/retrofit/models/RequestPost.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/retrofit/models/ResponsePost.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/retrofit/models/Retro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/retrofit/models/UserData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/retrofit/models/UsersData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/saloonapp/SaloonActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/saloonapp/SaloonAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/saloonapp/SaloonBranches.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/saloonapp/SaloonOPS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/saloonapp/SaloonOpFragAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/saloonapp/SaloonSlots.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/saloonapp/Saloon_Agent_Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/saloonapp/api/RetroFitAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/saloonapp/api/SaloonAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/saloonapp/fragments/Accepted_Ops.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/saloonapp/fragments/All_Ops.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/saloonapp/fragments/Rejected_Ops.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/saloonapp/fragments/Requested_Ops.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/saloonapp/fragments/andItsAdapters/AcceptedOps_Adapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/saloonapp/fragments/andItsAdapters/AllOps_Adapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/saloonapp/fragments/andItsAdapters/RejectedOps_Adapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/saloonapp/fragments/andItsAdapters/RequestedOps_Adapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/saloonapp/models/BannerData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/saloonapp/models/BranchData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/saloonapp/models/BranchList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/saloonapp/models/SaloonOPItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/saloonapp/models/SaloonOPSModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/saloonapp/models/SlotOPPost.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/saloonapp/models/SlotStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/saloonapp/models/SlotsOPSModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/searchView/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/searchView/UsersData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/task/Home.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/task/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/task/TaskAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/test/PracticeActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/practice/test/TestAdopter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../color/agent_login_btn_border.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../color/card_corners_shape.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agent_btn_shape.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agent_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agent_login_border.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agent_login_btn_border.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agent_login_layout_shape.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/available_slots_shape.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beach_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booknow_shape.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/branches_design_shape.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/camera2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/camera_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cross.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cross_icon_saloon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/custom_button.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/custom_email_icon.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datepicker_icon_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datepicker_icon_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/globe_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/google_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hide_password.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/illution_one.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image_border_shape.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input_box_shape.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/left_arrow_icon_saloon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/location_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/location_icon2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/locaton_icon.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail_icon_saloon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/op_branch_image_shape.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/op_btn_shape.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/op_schedule_box_shape.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/op_status_btn_shape.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/op_tablayout_indicator_shape.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/password_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phone_icon_saloon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profile_image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/round_shape.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/saloon_agent_exit_shape.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/saloon_agent_login_bg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/saloon_agent_password_eye_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/saloon_agent_password_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/saloon_agent_user_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/saloon_app_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/saloon_exit_arrow_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/saloon_home_bg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/saloon_slot_purpose_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/searchbar_border.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/selected_slot_timings_shape.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shapeable_image_shape.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/show_password.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slot_accept_status_btn_shape.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slot_address_box_shape.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slot_book_btn_shape.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slot_branchimg_shape.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slot_btn_shape.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slot_email_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slot_phone_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slot_reject_status_btn_shape.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slot_timings_shape.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slot_user_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tab_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timer_icon_saloon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website_link_shape.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyz.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_camera.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_capture_and_store.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_current_location.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_date.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_date_picker.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_destination.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_explicit_intent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_fire_base_crud.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_for_logs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_from_to.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_gallery_picker.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_get_continuous_location.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_google_auth.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_gps.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_gpsactivity.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_home.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_home2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_imagepicker_dep.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_implicit_intent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_location.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_login.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_main3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_main_fragment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_retrofit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_saloon.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_saloon_agent_login.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_saloon_branches.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_saloon_ops.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_saloon_slots.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_side_nav.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_splash_screen.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_tab.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_video.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_web_view.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/custom_progress_bar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/fragment_accepted__ops.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/fragment_all__ops.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/fragment_rejected__ops.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/fragment_requested__ops.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/saloon_accepted_ops_design.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/saloon_all_ops_design.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/saloon_branches_design_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/saloon_rejected_ops_design.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/saloon_requested_ops_design.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/side_nav_header.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/task_dialog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../menu/side_nav_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../raw/lotti_loading.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../raw/lottie2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../values/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../.idea/deploymentTargetDropDown.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/example/practice/PracticeActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/example/practice/TestActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/example/practice/crud/fragment/DbHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/example/practice/crud/fragment/DbHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/example/practice/crud/fragment/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/example/practice/crud/fragment/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/example/practice/crud/fragment/OneFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/example/practice/crud/fragment/OneFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/example/practice/crud/fragment/Recycler_Adopter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/example/practice/crud/fragment/Recycler_Adopter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/example/practice/crud/fragment/TwoFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/example/practice/crud/fragment/TwoFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/example/practice/searchView/API_Calls.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/example/practice/searchView/SearchActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/example/practice/searchView/SearchActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/example/practice/searchView/SearchAdopter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/example/practice/searchView/SearchAdopter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/example/practice/searchView/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../layout/activity_practice.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../layout/activity_practice.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../layout/activity_search.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../layout/activity_search.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../layout/activity_test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../layout/activity_test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../layout/search_recycler_design.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../layout/search_recycler_design.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../menu/menu_bar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../menu/menu_bar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../values-night/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../values-night/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../values/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../settings.gradle" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="ProjectId" id="2ZOfpnIic9K8WYv4yNbKTaIf1pA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "cidr.known.project.marker": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "last_opened_file_path": "C:/PRASAD/ANDROID_APPS/Android_Crud/app/src/main/res/drawable",
+    "show.migrate.to.gradle.popup": "false"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="29f68a35-cfe6-4f63-b6fd-ad49e07e233d" name="Changes" comment="" />
+      <created>1702298231409</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1702298231409</updated>
+    </task>
+    <servers />
+  </component>
+</project>
