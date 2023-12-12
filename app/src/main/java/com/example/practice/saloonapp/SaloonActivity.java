@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.app.ActivityCompat;
 import androidx.core.app.NotificationCompat;
+import androidx.core.content.res.ResourcesCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -17,6 +18,8 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.renderscript.Allocation;
@@ -101,9 +104,13 @@ public class SaloonActivity extends AppCompatActivity {
 
     private void makeNotification() {
         String CHANNEL_ID = "saloon_notification_channel";
+        Drawable drawable = ResourcesCompat.getDrawable(getResources(), R.drawable.beach_image, null);
+        BitmapDrawable bitmapDrawable = (BitmapDrawable)drawable;
+        Bitmap largeIcon = bitmapDrawable.getBitmap();
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(getApplicationContext(), CHANNEL_ID);
         builder.setSmallIcon(R.drawable.saloon_app_logo)
+                .setLargeIcon(largeIcon)
                 .setAutoCancel(true)
                 .setContentTitle("This is title.")
                 .setContentText("Sample text.")
