@@ -42,11 +42,15 @@ public class Accepted_Ops extends Fragment {
     private SaloonAPI saloonAPI;
     private String currentDate;
     private RecyclerView op_recyclerview;
-
+    private int branchId;
     View view;
-    String BASEURL = "http://182.18.157.215/SaloonApp/API/api/";
-    private String selectedDate;
     private ProgressBar accepted_progressBar;
+
+    public Accepted_Ops() {
+    }
+    public Accepted_Ops(int branchId) {
+        this.branchId = branchId;
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -57,8 +61,6 @@ public class Accepted_Ops extends Fragment {
         int year = now.get(Calendar.YEAR);
         int month = now.get(Calendar.MONTH);
         int day = now.get(Calendar.DAY_OF_MONTH);
-
-        selectedDate = null;
 
         currentDate = year + "-" + (month + 1) + "-" + day;
     }
@@ -88,10 +90,9 @@ public class Accepted_Ops extends Fragment {
         super.onViewCreated(view, savedInstanceState);
     }
 
-    public void loadDataByDate(String selectedDate) {
-        Log.d("TAG11", "3: " + selectedDate);
+    public void loadDataByDate(String date) {
         user = new ArrayList<>();
-        String endpointUrl = "http://182.18.157.215/SaloonApp/API/api/Appointment/GetAppointment/1/1/null/" + selectedDate;
+        String endpointUrl = "http://182.18.157.215/SaloonApp/API/api/Appointment/GetAppointment/1/" + branchId + "/null/" + date;
 
         retroFitAPI = new RetroFitAPI();
         saloonAPI = retroFitAPI.retrofitAPI(); // Replace with your actual base URL
@@ -112,7 +113,6 @@ public class Accepted_Ops extends Fragment {
                     if (opItem != null && !opItem.isEmpty()) {
                         for (SaloonOPItem item : opItem) {
                             if (item.getStatus().equals("Accepted")) {
-                                Log.d("TAG", "Accepted_Ops: " + item.getCustomerName());
                                 user.add(new SaloonOPItem(
                                         item.getId(),
                                         item.getBranchId(),
@@ -150,9 +150,7 @@ public class Accepted_Ops extends Fragment {
 
     // This method is called when the selected date changes
     public void updateRecordsByDate_acceptedOp(String selectedDate) {
-
-        Log.d("TAG11", "3: " + selectedDate);
-        String endpointUrl = "http://182.18.157.215/SaloonApp/API/api/Appointment/GetAppointment/1/1/null/" + selectedDate;
+        String endpointUrl = "http://182.18.157.215/SaloonApp/API/api/Appointment/GetAppointment/1/" + branchId + "/null/" + selectedDate;
         loadDataAgain(endpointUrl);
     }
 

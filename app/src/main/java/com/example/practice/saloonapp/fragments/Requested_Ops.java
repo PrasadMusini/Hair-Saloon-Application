@@ -42,6 +42,13 @@ public class Requested_Ops extends Fragment {
     private SaloonAPI saloonAPI;
     private RetroFitAPI retroFitAPI;
     ProgressBar requested_progressBar;
+    private int branchId;
+
+    public Requested_Ops() {}
+
+    public Requested_Ops(int branchId) {
+        this.branchId = branchId;
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -79,9 +86,9 @@ public class Requested_Ops extends Fragment {
     }
 
     public void loadRequestedOps(String date) {
-        Log.d("TAG11", "2: " + date);
+
         users = new ArrayList<>();
-        String endpointUrl = "http://182.18.157.215/SaloonApp/API/api/Appointment/GetAppointment/1/1/null/" + date;
+        String endpointUrl = "http://182.18.157.215/SaloonApp/API/api/Appointment/GetAppointment/1/" + branchId + "/null/" + date;
 
         retroFitAPI = new RetroFitAPI();
         saloonAPI = retroFitAPI.retrofitAPI(); // Replace with your actual base URL
@@ -101,6 +108,7 @@ public class Requested_Ops extends Fragment {
 
                     if (opItem != null && !opItem.isEmpty()) {
                         for (SaloonOPItem item : opItem) {
+                            Log.d(TAG, "Status: "+item.getStatus());
                             if (item.getStatus().equals("Submited")) {
                                 Log.d("TAG", "Requested_Ops: " + item.getCustomerName());
                                 users.add(new SaloonOPItem(
@@ -140,15 +148,13 @@ public class Requested_Ops extends Fragment {
     }
 
     public void updateRecordsByDate_requestedOp(String selectedDate) {
-
-        Log.d("TAG11", "2: " + selectedDate);
         loadRequestBySelectedDate(selectedDate);
     }
 
     public void loadRequestBySelectedDate(String selectedDate) {
         requested_progressBar.setVisibility(View.VISIBLE);
         users = new ArrayList<>();
-        String endpointUrl = "http://182.18.157.215/SaloonApp/API/api/Appointment/GetAppointment/1/1/null/" + selectedDate;
+        String endpointUrl = "http://182.18.157.215/SaloonApp/API/api/Appointment/GetAppointment/1/" + branchId + "/null/" + selectedDate;
 
         retroFitAPI = new RetroFitAPI();
         saloonAPI = retroFitAPI.retrofitAPI(); // Replace with your actual base URL
@@ -169,7 +175,6 @@ public class Requested_Ops extends Fragment {
                     if (opItem != null && !opItem.isEmpty()) {
                         for (SaloonOPItem item : opItem) {
                             if (item.getStatus().equals("Submited")) {
-                                Log.d("TAG", "Requested_Ops: " + item.getCustomerName());
                                 users.add(new SaloonOPItem(
                                         item.getId(),
                                         item.getBranchId(),

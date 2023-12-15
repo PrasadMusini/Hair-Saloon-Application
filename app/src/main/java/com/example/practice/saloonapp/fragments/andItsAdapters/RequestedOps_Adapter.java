@@ -60,16 +60,31 @@ public class RequestedOps_Adapter extends RecyclerView.Adapter<RequestedOps_Adap
         holder.op_userTime.setText(user.getSlotDuration());
         holder.op_userPhone.setText(user.getPhoneNumber());
         holder.acceptBtn.setOnClickListener(view -> {
-            Toast.makeText(context, "Accepted Button Clicked", Toast.LENGTH_SHORT).show();
-            slotStatusUpdate();
+            clickedOnAcceptedButton(holder);
         });
         holder.rejectBtn.setOnClickListener(view -> {
-            Toast.makeText(context, "Rejected Button Clicked", Toast.LENGTH_SHORT).show();
+            clickedOnRejectedButton(holder);
         });
     }
 
-    private void slotStatusUpdate() {
+    private void clickedOnAcceptedButton(ViewChild holder) {
 
+        holder.acceptBtn.setVisibility(View.GONE);
+        holder.rejectBtn.setVisibility(View.GONE);
+
+        holder.accepted_slot.setVisibility(View.VISIBLE);
+        Toast.makeText(context, "Accepted Button Clicked", Toast.LENGTH_SHORT).show();
+    }
+
+    private void clickedOnRejectedButton(ViewChild holder) {
+        holder.acceptBtn.setVisibility(View.GONE);
+        holder.rejectBtn.setVisibility(View.GONE);
+
+        holder.rejected_slot.setVisibility(View.VISIBLE);
+        Toast.makeText(context, "Rejected Button Clicked", Toast.LENGTH_SHORT).show();
+    }
+
+    private void slotStatusUpdate() {
 //        SaloonAPI saloonAPI = retroFitAPI.retrofitAPI();
 //        Call<SlotStatus> call = saloonAPI.updateSlotStatus(new SlotStatus(
 //                /* pass post object */
@@ -112,7 +127,7 @@ public class RequestedOps_Adapter extends RecyclerView.Adapter<RequestedOps_Adap
     class ViewChild extends RecyclerView.ViewHolder{
 
         private TextView op_userName, op_userGender, op_userPurpose, op_userEmail, op_userTime, op_userPhone;
-        private LinearLayout acceptBtn, rejectBtn;
+        private LinearLayout acceptBtn, rejectBtn, accepted_slot, rejected_slot;
 
         public ViewChild(@NonNull View itemView) {
             super(itemView);
@@ -122,8 +137,10 @@ public class RequestedOps_Adapter extends RecyclerView.Adapter<RequestedOps_Adap
             op_userEmail = itemView.findViewById(R.id.op_userEmail);
             op_userTime = itemView.findViewById(R.id.op_userTime);
             op_userPhone = itemView.findViewById(R.id.op_userPhone);
-            acceptBtn = itemView.findViewById(R.id.acceptBtn);
-            rejectBtn = itemView.findViewById(R.id.rejectBtn);
+            acceptBtn = itemView.findViewById(R.id.requestedOp_acceptBtn);
+            rejectBtn = itemView.findViewById(R.id.requestedOp_rejectBtn);
+            accepted_slot = itemView.findViewById(R.id.requestedOp_accepted_slot);
+            rejected_slot = itemView.findViewById(R.id.requestedOp_rejected_slot);
         }
     }
 }

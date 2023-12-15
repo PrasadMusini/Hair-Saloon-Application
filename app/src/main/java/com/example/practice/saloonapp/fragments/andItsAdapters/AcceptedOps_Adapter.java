@@ -17,6 +17,8 @@ import com.example.practice.saloonapp.models.SaloonOPItem;
 import java.util.ArrayList;
 import java.util.List;
 
+
+
 public class AcceptedOps_Adapter extends RecyclerView.Adapter<AcceptedOps_Adapter.ViewChild> {
 
 

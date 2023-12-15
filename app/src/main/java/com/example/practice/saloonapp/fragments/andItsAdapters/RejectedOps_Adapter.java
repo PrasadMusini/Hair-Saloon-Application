@@ -17,6 +17,7 @@ import com.example.practice.saloonapp.models.SaloonOPItem;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class RejectedOps_Adapter extends RecyclerView.Adapter<RejectedOps_Adapter.ViewChild> {
 
     public static final String TAG = "RejectedOps_Adapter";

@@ -46,8 +46,15 @@ public class All_Ops extends Fragment {
     private Dialog dialog;
     ProgressBar progressBar;
     View view;
-    String BASEURL = "http://182.18.157.215/SaloonApp/API/api/";
     private String selectedDate;
+    private int branchId;
+
+    public All_Ops() {
+    }
+
+    public All_Ops(int branchId) {
+        this.branchId = branchId;
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -89,9 +96,8 @@ public class All_Ops extends Fragment {
     }
 
     public void loadDataByDate(String date) {
-        Log.d("TAG41", "loadDataByDate: " + date);
         user = new ArrayList<>();
-        String endpointUrl = "http://182.18.157.215/SaloonApp/API/api/Appointment/GetAppointment/1/1/null/" + date;
+        String endpointUrl = "http://182.18.157.215/SaloonApp/API/api/Appointment/GetAppointment/1/" + branchId + "/null/" + date;
         progressBar.setVisibility(View.VISIBLE);
 
         retroFitAPI = new RetroFitAPI();
@@ -111,7 +117,6 @@ public class All_Ops extends Fragment {
 
                     if (opItem != null && !opItem.isEmpty()) {
                         for (SaloonOPItem item : opItem) {
-                            Log.d("TAG", "1: " + item.getCustomerName());
                             user.add(new SaloonOPItem(
                                     item.getId(),
                                     item.getBranchId(),
@@ -132,18 +137,17 @@ public class All_Ops extends Fragment {
                         }
                     } else {
                         // If no records are present, call the method in SaloonOPS
-                        Log.d("TAG", "else 1");
+                        showLog("else: response is empty");
                     }
                     adopter = new AllOps_Adapter(context, user, new SaloonOPS());
                     all_recyclerview.setAdapter(adopter);
-
                 }
             }
 
             @Override
             public void onFailure(Call<SaloonOPSModel> call, Throwable t) {
                 dialog.dismiss();
-                Log.d("TAG", "onFailure: " + t.getMessage());
+                showLog("onFailure: " + t.getMessage());
             }
         });
     }
@@ -151,8 +155,7 @@ public class All_Ops extends Fragment {
     // This method is called when the selected date changes
     public void updateRecordsByDate(String selectedDate) {
 
-        Log.d("TAG11", "1: " + selectedDate);
-        String endpointUrl = "http://182.18.157.215/SaloonApp/API/api/Appointment/GetAppointment/1/1/null/" + selectedDate;
+        String endpointUrl = "http://182.18.157.215/SaloonApp/API/api/Appointment/GetAppointment/1/" + branchId + "/null/" + selectedDate;
         loadDataAgain(endpointUrl);
     }
 
@@ -175,7 +178,6 @@ public class All_Ops extends Fragment {
 
                     if (opItem != null && !opItem.isEmpty()) {
                         for (SaloonOPItem item : opItem) {
-                            Log.d("TAG", "2: " + item.getCustomerName());
                             user.add(new SaloonOPItem(
                                     item.getId(),
                                     item.getBranchId(),
@@ -203,21 +205,18 @@ public class All_Ops extends Fragment {
                         adopter.updateData(user);
 
                     } else {
-                        // If no records are present, call the method in SaloonOPS
                         user.clear();
                         adopter = new AllOps_Adapter(getContext(), user, new SaloonOPS());
                         all_recyclerview.setAdapter(adopter);
 
                         ((SaloonOPS) getActivity()).displayNoRecordsText(true);
-
-                        Log.d("TAG", "else 2");
                     }
                 }
             }
 
             @Override
             public void onFailure(Call<SaloonOPSModel> call, Throwable t) {
-                Log.d("TAG", "onFailure: " + t.getMessage());
+                showLog("onFailure: " + t.getMessage());
             }
         });
     }

@@ -5,12 +5,14 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.practice.R;
+import com.example.practice.saloonapp.SaloonActivity;
 import com.example.practice.saloonapp.SaloonOPS;
 import com.example.practice.saloonapp.models.SaloonOPItem;
 
@@ -23,11 +25,14 @@ public class AllOps_Adapter extends RecyclerView.Adapter<AllOps_Adapter.ViewChil
     private Context context;
     private ArrayList<SaloonOPItem> users;
     private SaloonOPS saloonOPS;
+    private SaloonActivity saloonActivity;
 
     public AllOps_Adapter(Context context, ArrayList<SaloonOPItem> users, SaloonOPS saloonOPS) {
         this.context = context;
         this.users = users;
-        this.saloonOPS = new SaloonOPS();
+//        this.saloonOPS = new SaloonOPS();
+        this.saloonOPS = saloonOPS;
+        this.saloonActivity = new SaloonActivity();
     }
 
     @NonNull
@@ -40,14 +45,49 @@ public class AllOps_Adapter extends RecyclerView.Adapter<AllOps_Adapter.ViewChil
     @Override
     public void onBindViewHolder(@NonNull ViewChild holder, int position) {
 
-            SaloonOPItem user = users.get(position);
-            holder.op_userName.setText(user.getCustomerName());
-            holder.op_userEmail.setText(user.getEmail());
-            holder.op_userGender.setText(user.getGender());
-            holder.op_userPurpose.setText(user.getPurposeOfVisit());
-            holder.op_userTime.setText(user.getSlotDuration());
-            holder.op_userPhone.setText(user.getPhoneNumber());
+        SaloonOPItem slot = users.get(position);
+
+        Log.d(TAG, "status: "+slot.getStatus());
+
+        holder.op_userName.setText(slot.getCustomerName());
+        holder.op_userEmail.setText(slot.getEmail());
+        holder.op_userGender.setText(slot.getGender());
+        holder.op_userPurpose.setText(slot.getPurposeOfVisit());
+        holder.op_userTime.setText(slot.getSlotDuration());
+        holder.op_userPhone.setText(slot.getPhoneNumber());
+
+        if (slot.getStatus().equals("Submited")){
+
+            // show buttons default
+        }else{
+
+            holder.acceptBtn.setVisibility(View.GONE);
+            holder.rejectBtn.setVisibility(View.GONE);
+
+            if (slot.getStatus().equals("Accepted")){
+                holder.accepted_slot.setVisibility(View.VISIBLE);
+            }else {
+                holder.rejected_slot.setVisibility(View.VISIBLE);
+            }
+        }
+        holder.acceptBtn.setOnClickListener(view -> clickedOnAcceptedButton(holder));
+        holder.rejectBtn.setOnClickListener(view -> clickedOnRejectedButton(holder));
     }
+
+    private void clickedOnAcceptedButton(ViewChild holder) {
+        holder.acceptBtn.setVisibility(View.GONE);
+        holder.rejectBtn.setVisibility(View.GONE);
+
+        holder.accepted_slot.setVisibility(View.VISIBLE);
+    }
+
+    private void clickedOnRejectedButton(ViewChild holder) {
+        holder.acceptBtn.setVisibility(View.GONE);
+        holder.rejectBtn.setVisibility(View.GONE);
+
+        holder.rejected_slot.setVisibility(View.VISIBLE);
+    }
+
 
     public void updateData(List<SaloonOPItem> newData) {
         users.clear();
@@ -58,13 +98,11 @@ public class AllOps_Adapter extends RecyclerView.Adapter<AllOps_Adapter.ViewChil
     @Override
     public int getItemCount() {
         if (users.size() == 0) {
-//            saloonOPS.displayNoRecordsText(true);
             saloonOPS.displayNoRecordsText(true);
-            Log.d(TAG, "onBindViewHolder: empty");
+//            Log.d(TAG, "onBindViewHolder: empty");
         } else {
-            Log.d(TAG, "onBindViewHolder: present");
-//            saloonOPS.displayNoRecordsText(false);
             saloonOPS.displayNoRecordsText(false);
+//            Log.d(TAG, "onBindViewHolder: present");
         }
         return users.size();
     }
@@ -73,6 +111,7 @@ public class AllOps_Adapter extends RecyclerView.Adapter<AllOps_Adapter.ViewChil
     class ViewChild extends RecyclerView.ViewHolder{
 
         private TextView op_userName, op_userGender, op_userPurpose, op_userEmail, op_userTime, op_userPhone;
+        private LinearLayout acceptBtn, rejectBtn, accepted_slot, rejected_slot;
 
         public ViewChild(@NonNull View itemView) {
             super(itemView);
@@ -82,6 +121,11 @@ public class AllOps_Adapter extends RecyclerView.Adapter<AllOps_Adapter.ViewChil
             op_userEmail = itemView.findViewById(R.id.op_userEmail);
             op_userTime = itemView.findViewById(R.id.op_userTime);
             op_userPhone = itemView.findViewById(R.id.op_userPhone);
+            acceptBtn = itemView.findViewById(R.id.allOp_acceptBtn);
+            rejectBtn = itemView.findViewById(R.id.allOp_rejectBtn);
+            accepted_slot = itemView.findViewById(R.id.allOp_accepted_slot);
+            rejected_slot = itemView.findViewById(R.id.allOp_rejected_slot);
         }
     }
+
 }

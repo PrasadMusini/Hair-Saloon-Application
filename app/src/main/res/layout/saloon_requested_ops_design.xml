@@ -199,8 +199,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent">
 
+                    <!--                    acceptBtn -->
                     <LinearLayout
-                        android:id="@+id/acceptBtn"
+                        android:id="@+id/requestedOp_acceptBtn"
                         android:layout_width="93dp"
                         android:layout_height="41dp"
                         android:gravity="center"
@@ -216,12 +217,13 @@
 
                     </LinearLayout>
 
+                    <!--                    rejectBtn -->
                     <LinearLayout
-                        android:id="@+id/rejectBtn"
+                        android:id="@+id/requestedOp_rejectBtn"
                         android:layout_width="93dp"
                         android:layout_height="41dp"
                         android:gravity="center"
-                        android:layout_below="@+id/acceptBtn"
+                        android:layout_below="@+id/requestedOp_acceptBtn"
                         android:background="@drawable/slot_reject_status_btn_shape">
 
                         <TextView
@@ -232,34 +234,64 @@
 
                     </LinearLayout>
 
+
+                    <!--                    accepted_status -->
+                    <!--                    <LinearLayout-->
+                    <!--                        android:id="@+id/accepted_slot"-->
+                    <!--                        android:layout_width="80dp"-->
+                    <!--                        android:layout_height="80dp"-->
+                    <!--                        android:gravity="center"-->
+                    <!--                        android:layout_marginTop="10dp"-->
+                    <!--                        android:layout_gravity="center"-->
+                    <!--                        android:orientation="vertical"-->
+                    <!--                        android:background="@drawable/op_status_btn_shape"-->
+                    <!--                        android:layout_centerInParent="true"-->
+                    <!--                        android:visibility="gone">-->
+
+                    <!--                        <ImageView-->
+                    <!--                            android:layout_width="30dp"-->
+                    <!--                            android:layout_height="30dp"-->
+                    <!--                            android:src="@drawable/home_icon"/>-->
+                    <!--                        <TextView-->
+                    <!--                            android:layout_width="wrap_content"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:text="Rejected"-->
+                    <!--                            android:textSize="11sp"-->
+                    <!--                            android:textColor="@color/saloon_header"-->
+                    <!--                            android:textStyle="bold"-->
+                    <!--                            android:textAllCaps="false"/>-->
+
+                    <!--                    </LinearLayout>-->
                     <LinearLayout
-                        android:id="@+id/accepted_slot"
+                        android:id="@+id/requestedOp_accepted_slot"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:gravity="center"
-                        android:visibility="gone"
                         android:layout_marginTop="10dp"
                         android:layout_gravity="center"
                         android:orientation="vertical"
-                        android:background="@drawable/op_status_btn_shape"
-                        android:layout_centerInParent="true">
+                        android:background="@drawable/op_accepted_status_btn_shape"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone">
 
                         <ImageView
                             android:layout_width="30dp"
                             android:layout_height="30dp"
-                            android:src="@drawable/cross_icon_saloon"/>
+                            android:src="@drawable/slot_accepted_icon"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Rejected"
+                            android:text="Accepted"
                             android:textSize="11sp"
-                            android:textColor="@color/saloon_header"
+                            android:textColor="@color/green"
                             android:textStyle="bold"
                             android:textAllCaps="false"/>
 
                     </LinearLayout>
+
+                    <!--                    rejected_slot -->
                     <LinearLayout
-                        android:id="@+id/rejected_slot"
+                        android:id="@+id/requestedOp_rejected_slot"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:gravity="center"

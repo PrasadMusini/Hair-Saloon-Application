@@ -5,8 +5,8 @@
     android:layout_height="155dp"
     android:layout_marginBottom="20dp"
     android:background="@drawable/branches_design_shape"
-    android:gravity="center_vertical"
     android:elevation="3dp"
+    android:gravity="center_vertical"
     android:padding="18dp">
 
     <LinearLayout
@@ -18,8 +18,8 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="5"
             android:layout_marginBottom="5dp"
+            android:layout_weight="5.5"
             android:orientation="vertical">
 
             <LinearLayout
@@ -31,16 +31,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Name : "
-                    android:textSize="12sp"
                     android:textColor="@color/saloon_header"
+                    android:textSize="12sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/op_userName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="12sp"
-                    android:textColor="@color/facebook" />
+                    android:textColor="@color/facebook"
+                    android:textSize="12sp" />
 
             </LinearLayout>
 
@@ -54,16 +54,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Gender : "
-                    android:textSize="12sp"
                     android:textColor="@color/saloon_header"
+                    android:textSize="12sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/op_userGender"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:textSize="12sp"
-                    android:textColor="@color/facebook"/>
+                    android:textColor="@color/facebook"
+                    android:textSize="12sp" />
 
             </LinearLayout>
 
@@ -77,16 +77,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Purpose : "
-                    android:textSize="12sp"
                     android:textColor="@color/saloon_header"
+                    android:textSize="12sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/op_userPurpose"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="12sp"
-                    android:textColor="@color/facebook" />
+                    android:textColor="@color/facebook"
+                    android:textSize="12sp" />
 
             </LinearLayout>
 
@@ -100,22 +100,22 @@
                 <ImageView
                     android:layout_width="14dp"
                     android:layout_height="14dp"
-                    android:src="@drawable/mail_icon_saloon"/>
+                    android:src="@drawable/mail_icon_saloon" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=" : "
-                    android:textSize="12sp"
                     android:ellipsize="end"
-                    android:textColor="@color/saloon_header"/>
+                    android:text=" : "
+                    android:textColor="@color/saloon_header"
+                    android:textSize="12sp" />
 
                 <TextView
                     android:id="@+id/op_userEmail"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:textSize="12sp"
-                    android:textColor="@color/facebook" />
+                    android:textColor="@color/facebook"
+                    android:textSize="12sp" />
 
             </LinearLayout>
 
@@ -128,21 +128,21 @@
                 <ImageView
                     android:layout_width="15dp"
                     android:layout_height="15dp"
-                    android:src="@drawable/timer_icon_saloon"/>
+                    android:src="@drawable/timer_icon_saloon" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=" : "
-                    android:textSize="12sp"
-                    android:textColor="@color/saloon_header" />
+                    android:textColor="@color/saloon_header"
+                    android:textSize="12sp" />
 
                 <TextView
                     android:id="@+id/op_userTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="12sp"
-                    android:textColor="@color/facebook" />
+                    android:textColor="@color/facebook"
+                    android:textSize="12sp" />
 
             </LinearLayout>
 
@@ -150,8 +150,8 @@
 
         <View
             android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_weight="1"/>
+            android:layout_height="match_parent"
+            android:layout_weight="0.5" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -160,7 +160,7 @@
             android:orientation="vertical">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:orientation="horizontal">
@@ -168,48 +168,132 @@
                 <ImageView
                     android:layout_width="15dp"
                     android:layout_height="15dp"
-                    android:src="@drawable/phone_icon_saloon"/>
+                    android:src="@drawable/phone_icon_saloon" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="5dp"
                     android:text=":"
-                    android:textSize="12sp"
                     android:textColor="@color/saloon_header"
+                    android:textSize="12sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/op_userPhone"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="12sp"
-                    android:textColor="@color/facebook" />
+                    android:text="0000000000"
+                    android:textColor="@color/facebook"
+                    android:textSize="12sp" />
 
             </LinearLayout>
 
+            <!--here-->
             <LinearLayout
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_gravity="center"
-                android:orientation="vertical"
-                android:background="@drawable/op_status_btn_shape"
-                android:layout_centerInParent="true">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal">
 
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/cross_icon_saloon"/>
-                <TextView
+                <RelativeLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Rejected"
-                    android:textSize="11sp"
-                    android:textColor="@color/saloon_header"
-                    android:textStyle="bold"
-                    android:textAllCaps="false"/>
+                    android:layout_height="match_parent">
+
+                    <!--                    acceptBtn-->
+                    <LinearLayout
+                        android:id="@+id/allOp_acceptBtn"
+                        android:layout_width="93dp"
+                        android:layout_height="41dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="9dp"
+                        android:background="@drawable/slot_accept_status_btn_shape"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Accept"
+                            android:textColor="@color/green" />
+
+                    </LinearLayout>
+
+                    <!--                    rejectBtn-->
+                    <LinearLayout
+                        android:id="@+id/allOp_rejectBtn"
+                        android:layout_width="93dp"
+                        android:layout_height="41dp"
+                        android:layout_below="@+id/allOp_acceptBtn"
+                        android:background="@drawable/slot_reject_status_btn_shape"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Reject"
+                            android:textColor="@color/saloon_header" />
+
+                    </LinearLayout>
+
+
+                    <!--                    accepted_status -->
+                    <LinearLayout
+                        android:id="@+id/allOp_accepted_slot"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/op_accepted_status_btn_shape"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/slot_accepted_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Accepted"
+                            android:textAllCaps="false"
+                            android:textColor="@color/green"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <!--                    rejected_status -->
+                    <LinearLayout
+                        android:id="@+id/allOp_rejected_slot"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/op_status_btn_shape"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/slot_rejected_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rejected"
+                            android:textAllCaps="false"
+                            android:textColor="@color/saloon_header"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
 
             </LinearLayout>
 

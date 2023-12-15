@@ -34,6 +34,8 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+
+
 public class Rejected_Ops extends Fragment {
 
     private RejectedOps_Adapter adopter;
@@ -48,6 +50,13 @@ public class Rejected_Ops extends Fragment {
     View view;
     String BASEURL = "http://182.18.157.215/SaloonApp/API/api/";
     private String selectedDate;
+    private int branchId;
+
+    public Rejected_Ops() {}
+
+    public Rejected_Ops(int branchId) {
+        this.branchId = branchId;
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -90,9 +99,10 @@ public class Rejected_Ops extends Fragment {
     }
 
     public void loadDataByDate(String date) {
+//        branchId
         Log.d("TAG11", "4: " + date);
         user = new ArrayList<>();
-        String endpointUrl = "http://182.18.157.215/SaloonApp/API/api/Appointment/GetAppointment/1/1/null/" + date;
+        String endpointUrl = "http://182.18.157.215/SaloonApp/API/api/Appointment/GetAppointment/1/" + branchId + "/null/" + date;
 
         retroFitAPI = new RetroFitAPI();
         saloonAPI = retroFitAPI.retrofitAPI(); // Replace with your actual base URL
@@ -162,7 +172,7 @@ public class Rejected_Ops extends Fragment {
     // This method is called when the selected date changes
     public void updateRecordsByDate_rejectedOp(String selectedDate) {
         Log.d("TAG11", "4: " + selectedDate);
-        String endpointUrl = "http://182.18.157.215/SaloonApp/API/api/Appointment/GetAppointment/1/1/null/" + selectedDate;
+        String endpointUrl = "http://182.18.157.215/SaloonApp/API/api/Appointment/GetAppointment/1/" + branchId + "/null/" + selectedDate;
         loadDataAgain(endpointUrl);
     }
 

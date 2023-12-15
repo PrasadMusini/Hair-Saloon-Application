@@ -46,12 +46,11 @@ import java.util.Calendar;
 
 public class SaloonOPS extends AppCompatActivity implements DatePickerDialog.OnDateSetListener {
 
+    public static final String TAG = "SaloonOPS";
     ImageView back_arrow, agent_logOut;
     LinearLayout op_datePicker;
     ShapeableImageView opBranchImage;
-    SaloonOpFragAdapter fragmentAdapter;
     TabLayout tabLayout;
-    ViewPager2 viewPager;
     TextView op_date;
     TextView op_branchName;
     static TextView no_ops;
@@ -66,6 +65,8 @@ public class SaloonOPS extends AppCompatActivity implements DatePickerDialog.OnD
     GoogleSignInClient signInClient;
     GoogleSignInOptions signInOptions;
     GoogleSignInAccount account;
+    private int branchId;
+    private String branchName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,7 +74,6 @@ public class SaloonOPS extends AppCompatActivity implements DatePickerDialog.OnD
         setContentView(R.layout.activity_saloon_ops);
 
         String branchImage = "http://182.18.157.215/SaloonApp/Saloon_Repo/FileRepository/Branch1.jpg";
-        fragmentAdapter = new SaloonOpFragAdapter(this);
 
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseUser = firebaseAuth.getCurrentUser();
@@ -109,13 +109,18 @@ public class SaloonOPS extends AppCompatActivity implements DatePickerDialog.OnD
         Intent intent = getIntent();
         if (intent != null) {
 
+            if (intent.hasExtra("branchId")) {
+                branchId = intent.getIntExtra("branchId", 1);
+            }
+            if (intent.hasExtra("branchName")) {
+                branchName = intent.getStringExtra("branchName");
+            }
             if (intent.hasExtra("branchImage")) {
                 branchImage = intent.getStringExtra("branchImage");
             }
-            op_branchName.setText(intent.getStringExtra("branchName"));
-//            Glide.with(this)
-//                    .load(branchImage)
-//                    .into(opBranchImage);
+            op_branchName.setText(branchName);
+
+            Log.d(TAG, "branchId: " + branchId + " ,branchName:" + branchName);
 
 
             Glide.with(this)
@@ -142,7 +147,7 @@ public class SaloonOPS extends AppCompatActivity implements DatePickerDialog.OnD
             finish();
 //            startActivity(new Intent(this, SaloonActivity.class));
         });
-        loadFragments(new All_Ops());
+        loadFragments(new All_Ops(branchId));
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
@@ -150,16 +155,16 @@ public class SaloonOPS extends AppCompatActivity implements DatePickerDialog.OnD
 
                 switch (tab.getPosition()) {
                     case 0:
-                        fragment = new All_Ops();
+                        fragment = new All_Ops(branchId);
                         break;
                     case 1:
-                        fragment = new Requested_Ops();
+                        fragment = new Requested_Ops(branchId);
                         break;
                     case 2:
-                        fragment = new Accepted_Ops();
+                        fragment = new Accepted_Ops(branchId);
                         break;
                     default:
-                        fragment = new Rejected_Ops();
+                        fragment = new Rejected_Ops(branchId);
                 }
                 loadFragments(fragment);
             }
