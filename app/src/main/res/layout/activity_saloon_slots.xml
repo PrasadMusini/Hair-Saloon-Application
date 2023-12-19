@@ -23,21 +23,24 @@
         <RelativeLayout
             android:id="@+id/agent_btn"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp">
 
             <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:id="@+id/exit_icon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
                 android:layout_alignParentStart="true"
-                android:src="@drawable/home_icon" />
+                android:layout_centerVertical="true"
+                android:src="@drawable/left_arrow_icon_saloon" />
 
             <ImageView
                 android:id="@+id/homeIcon"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:layout_centerInParent="true"
-                android:src="@drawable/home_icon" />
+                android:src="@drawable/original_saloon_logo" />
+
 
         </RelativeLayout>
 

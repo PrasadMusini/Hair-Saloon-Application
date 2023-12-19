@@ -6,49 +6,41 @@
     android:layout_height="match_parent"
     tools:context=".saloonapp.SaloonOPS">
 
-
     <LinearLayout
         android:id="@+id/op_header"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="@color/saloon_op_header"
-        android:elevation="10dp"
-        android:gravity="center"
+        android:layout_height="56dp"
+        android:background="@color/saloon_header"
+        android:elevation="6dp"
         android:orientation="horizontal"
-        android:padding="8dp"
+        android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <RelativeLayout
+            android:id="@+id/agent_btn"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
-            android:layout_marginEnd="10dp"
-            android:gravity="center_vertical">
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp">
 
             <ImageView
                 android:id="@+id/back_arrow"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
                 android:src="@drawable/left_arrow_icon_saloon" />
 
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_centerInParent="true"
-                android:layout_marginRight="5dp"
-                android:src="@drawable/home_icon" />
+            <!--            <ImageView-->
+            <!--                android:id="@+id/agentIconForLogout"-->
+            <!--                android:layout_width="20dp"-->
+            <!--                android:layout_height="20dp"-->
+            <!--                android:layout_centerInParent="true"-->
+            <!--                android:layout_marginRight="5dp"-->
+            <!--                android:src="@drawable/agent_icon" />-->
 
-            <ImageView
-                android:id="@+id/agent_logOut"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_alignParentEnd="true"
-                android:src="@drawable/agent_icon" />
 
         </RelativeLayout>
 
